@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="css/jquery.znotify.css" rel="stylesheet">
+    <script src="jquery-1.10.2.js"></script>
+    <script src="jquery.znotify.js"></script>
+</head>
+<body>
+<a id="aa">aaa</a>
+<script>
+    $("#aa").click(function(){
+        var r=Math.floor(Math.random() * 9999999);
+        $.znotify({id:r,msg:'zzzzzzzzz',autoclose:false,cbFn:function(data){console.log(data)}})
+    });
+
+</script>
+</body>
+</html>
